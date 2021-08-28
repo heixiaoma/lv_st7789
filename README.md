@@ -1,9 +1,21 @@
 # lv_st7789 Hybrid MicroPython LVGL driver for ST7789 Displays
 
-This driver adds support for 320x240, 240x240 and 135x240 ST7789 Displays with
+This driver adds support for 320x240, 240x240 and 135x240 ST7789 displays with
 rotations for the ESP32 to the LVGL MicroPython bindings.
 
+## Install and Build
 
+- Clone the https://github.com/lvgl/lv_micropython repo.
+- Copy the espidf.c and ili9XXX.py files from the es32 directory in this repo into the lv_micropython/lib/lv_bindings/driver/esp32/ directory of your cloned lv_micropython repo.
+- Follow the build instructions from the README.md of the https://github.com/lvgl/lv_micropython repo.
+
+## Pre-compiled firmware.bin
+
+See the firmware/tdisplay directory for a pre-compiled ESP32 GENERIC firmware.bin file you can flash to an ESP32 device using the esptool.py utility.
+
+## Examples
+
+See the examples/tdisplay directory for several LVGL MicroPython example programs configured for the ESP32 TTGO T-Display device.
 
 ## Parameters and defaults
 
