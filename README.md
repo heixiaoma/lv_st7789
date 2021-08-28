@@ -11,11 +11,16 @@ rotations for the ESP32 to the LVGL MicroPython bindings.
 
 ## Pre-compiled firmware.bin
 
-See the firmware/tdisplay directory for a pre-compiled ESP32 GENERIC firmware.bin file you can flash to an ESP32 device using the esptool.py utility.
+See the firmware directory for a pre-compiled firmware files you can flash to an ESP32 device using the esptool.py utility.
+
+Directory    | File         | Device
+------------ | ------------ | ------------------------------------------
+tdisplay     | firmware.bin | LILYGO® TTGO T-Display or GENERIC ESP32
+twatch-2020  | firmware.bin | LILYGO® T-Watch 2020 or 16MB GENERIC ESP32
 
 ## Examples
 
-See the examples/tdisplay directory for several LVGL MicroPython example programs configured for the ESP32 TTGO T-Display device.
+See the examples directory for several example LVGL MicroPython programs configured for the LILYGO® TTGO T-Display and LILYGO® T-Watch 2020 devices.
 
 ## Parameters and defaults
 
