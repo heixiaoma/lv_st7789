@@ -17,7 +17,7 @@ def set_value(indic,v):
 
 meter = lv.meter(lv.scr_act())
 meter.center()
-meter.set_size(240, 135)
+meter.set_size(200, 200)
 
 # Remove the circle from the middle
 meter.remove_style(None, lv.PART.INDICATOR)
