@@ -29,7 +29,6 @@ See the examples directory for several example LVGL MicroPython programs configu
         miso=-1, mosi=19, clk=18, cs=5, dc=16, rst=23, power=-1, power_on=0
         backlight=4, backlight_on=1, spihost=esp.HSPI_HOST, mhz=40, factor=4,
         hybrid=True, width=135, height=240, colormode=COLOR_MODE_BGR, rot=PORTRAIT,
-        invert=True, double_buffer=False, half_duplex=True, asynchronous=False,
         initialize=True)
 ```
 
