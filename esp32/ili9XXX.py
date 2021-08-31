@@ -598,16 +598,10 @@ class ili9488(ili9XXX):
             {'cmd': 0x29, 'data': bytes([0]), 'delay': 120}
         ]
 
-        super().__init__(miso, mosi, clk, cs, dc, rst, power, backlight, backlight_on, power_on,
-            spihost, mhz, factor, hybrid, width, height, start_x, start_y, colormode, rot, invert,
-            double_buffer, half_duplex, display_type=DISPLAY_TYPE_ILI9488, asynchronous=asynchronous,
-            initialize=initialize)
-
         super().__init__(miso=miso, mosi=mosi, clk=clk, cs=cs, dc=dc, rst=rst, power=power, backlight=backlight,
             backlight_on=backlight_on, power_on=power_on, spihost=spihost, mhz=mhz, factor=factor, hybrid=hybrid,
-            width=width, height=height, start_x=start_x, start_y=start_y, colormode=colormode, rot=rot, invert=invert,
-            double_buffer=double_buffer, half_duplex=half_duplex, asynchronous=asynchronous, initialize=initialize)
-
+            width=width, height=height, start_x=start_x, start_y=start_y, invert=invert, double_buffer=double_buffer,
+            half_duplex=half_duplex, asynchronous=asynchronous, initialize=initialize)
 
 class gc9a01(ili9XXX):
     # On the tested display the write direction and colormode appear to be
@@ -686,9 +680,10 @@ class gc9a01(ili9XXX):
             {'cmd': 0x29, 'data': bytes([0]), 'delay': 120}
         ]
 
-        super().__init__(miso, mosi, clk, cs, dc, rst, power, backlight, backlight_on, power_on,
-            spihost, mhz, factor, hybrid, width, height, start_x, start_y, invert, double_buffer,
-            half_duplex, asynchronous=asynchronous, initialize=initialize)
+        super().__init__(miso=miso, mosi=mosi, clk=clk, cs=cs, dc=dc, rst=rst, power=power, backlight=backlight,
+            backlight_on=backlight_on, power_on=power_on, spihost=spihost, mhz=mhz, factor=factor, hybrid=hybrid,
+            width=width, height=height, start_x=start_x, start_y=start_y, invert=invert, double_buffer=double_buffer,
+            half_duplex=half_duplex, asynchronous=asynchronous, initialize=initialize)
 
 class st7789(ili9XXX):
     PORTRAIT = const(0)
@@ -761,6 +756,7 @@ class st7789(ili9XXX):
             {'cmd':  0x29, 'data': bytes([0x0]), 'delay': 120}
         ]
 
-        super().__init__(miso, mosi, clk, cs, dc, rst, power, backlight, backlight_on, power_on,
-            spihost, mhz, factor, hybrid, width, height, start_x, start_y, invert, double_buffer,
-            half_duplex, asynchronous=asynchronous, initialize=initialize)
+        super().__init__(miso=miso, mosi=mosi, clk=clk, cs=cs, dc=dc, rst=rst, power=power, backlight=backlight,
+            backlight_on=backlight_on, power_on=power_on, spihost=spihost, mhz=mhz, factor=factor, hybrid=hybrid,
+            width=width, height=height, start_x=start_x, start_y=start_y, invert=invert, double_buffer=double_buffer,
+            half_duplex=half_duplex, asynchronous=asynchronous, initialize=initialize)
